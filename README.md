@@ -1,2 +1,2 @@
 # Estudos_Python
-Repositório para armazenar exercícios em python 
+Repositório para armazenar codigos e exercícios em python 
