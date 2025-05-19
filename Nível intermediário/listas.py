@@ -38,6 +38,8 @@ print(lista)
 lista[-1] = 100
 print(lista)
 
+print(len(lista)) # Ver tamanho da lista 
+
 
 # LISTAS SÃO ITERÁVEIS - pode ser pecorrida
 # i = 0

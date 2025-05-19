@@ -4,7 +4,7 @@
 
 print("Presença na Sala de Aula")
 
-alunos_sala = ["Davi", "matheus","Lucas", "Letycia", "Luana"]
+alunos_sala = ["Davi", "Matheus","Lucas", "Letycia", "Luana"]
 
 presenca = {
     alunos_sala[0]: False,
@@ -14,9 +14,35 @@ presenca = {
     alunos_sala[4]: False
 }
 
-print(presenca)
+print(presenca, f"\n ")
 
-aluno = 1
+i = True
+x = 0
 
-for aluno in alunos_sala:
-    print(f"Aluno {alunos_sala[aluno]} está presente? (S/N): ")
+# print (len(presenca))
+
+while i == True:
+    pres = input(f"Aluno {alunos_sala[x]} está presente? (S/N): ").strip().upper()
+    
+    if pres == "S":
+        presenca [alunos_sala[x]] = True
+        x += 1
+        
+    else :
+        presenca [alunos_sala[x]] = False
+        x += 1
+    
+    if x == (len(presenca) - 1):
+        # break
+        i = False    
+    
+# print(len(alunos_sala))
+
+
+
+
+
+
+
+
+
