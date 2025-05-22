@@ -2,9 +2,13 @@
 # Você foi encarregado de criar um pequeno sistema em Python que registra os alunos presentes em uma aula.
 
 
-print("Presença na Sala de Aula")
+print(f"Presença na Sala de Aula\n")
 
 alunos_sala = ["Davi", "Matheus","Lucas", "Letycia", "Luana"]
+
+presentes = []
+
+ausentes = []
 
 presenca = {
     alunos_sala[0]: False,
@@ -14,31 +18,27 @@ presenca = {
     alunos_sala[4]: False
 }
 
-print(presenca, f"\n ")
+print(f"Alunos na turma: ", alunos_sala)
+print()
 
-i = True
 x = 0
 
-# print (len(presenca))
-
-while i == True:
+while x < len(alunos_sala):
     pres = input(f"Aluno {alunos_sala[x]} está presente? (S/N): ").strip().upper()
     
     if pres == "S":
         presenca [alunos_sala[x]] = True
+        presentes.append(alunos_sala[x]) 
         x += 1
         
     else :
         presenca [alunos_sala[x]] = False
+        ausentes.append(alunos_sala[x]) 
         x += 1
-    
-    if x == (len(presenca) - 1):
-        # break
-        i = False    
-    
-# print(len(alunos_sala))
-
-
+        
+print()    
+print(f"Presentes ({len(presentes)}): {presentes}")
+print(f"Ausentes ({len(ausentes)}): {ausentes}")
 
 
 
