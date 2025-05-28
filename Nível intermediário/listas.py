@@ -18,6 +18,7 @@ lista = [1, 'string', 3.4556, 1, 1]
 # acessando um índice da lista
 print(lista[0])
 
+
 # Manipulação de listas
 lista.append(coordenada) #Adiciona um Valor ao final da lista 
 print(lista)
@@ -26,6 +27,7 @@ lista.pop() # Remove um valor de acordo com o indice, se não passar o indice el
 
 print(lista)
 
+lista.extend(coordenada) # Faz a união dos elementos a outra.
 print(lista.count(1))# Conta ocorrências de um determinado valor dentro de uma lista 
 
 # print(lista.sort()) # valores do mesmo tipo
